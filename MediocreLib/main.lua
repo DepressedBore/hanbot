@@ -1,12 +1,11 @@
-local mLib;
-
-mLib = {
+local mLib = {
     _NAME        = "MediocreLib",
     _TYPE        = "lib",
     _URL         = "https://raw.githubusercontent.com/DepressedBore/hanbot/master/MediocreLib/",
     _DESCRIPTION = "Mediocre huh..I wonder why"
 }
 
+module.lib("DivineLib")
 module.load("DivineLib", "net").update(mLib._NAME, mLib._TYPE, mLib._URL)
 
 setmetatable(mLib, {
