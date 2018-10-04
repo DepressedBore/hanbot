@@ -3,7 +3,7 @@ print("Bore's Draven Loaded!")
 local Draven = {
     _NAME        = "BoringDraven",
     _TYPE        = "lua",
-    _URL         = "https://raw.githubusercontent.com/DepressedBore/hanbot/master/Draven/",
+    _URL         = "https://raw.githubusercontent.com/DepressedBore/hanbot/master/BoringDraven/",
     _DESCRIPTION = "First Script on HanBot. I wonder how its gonna turn out.."
 }
 module.lib("MediocreLib")
