@@ -97,7 +97,7 @@ end
 function Draven.LoadMenu()
     --Menu initialization
     Draven.Menu = menu("BoringDraven", "Boring Draven")
-    Draven.Menu:header(" ", "Witch King's Draven")
+    Draven.Menu:header(" ", "Draven Script by Bore")
     --Q--
     Draven.Menu:menu   ("Q", "Q Settings")
     Draven.Menu.Q:header  ("          ", "Combo Settings")
@@ -143,8 +143,7 @@ function Draven.LoadMenu()
     Draven.Menu.R.Heroes:boolean("Combo"   , "Enabled"            ,   true)
     Draven.Menu.R:slider  ("Count"     , "Auto Use When X Enemies", 2, 0, 5, 1)
     Draven.Menu.R:boolean ("KS"        , "Use on KS"              , true)
-    Draven.Menu.R:slider  ("Mana"      , "Min Mana %"             , 0, 0, 100, 1)
-    Draven.Menu:header    ("_VERSION"  , "Release_"..Draven.scriptVersion)
+    Draven.Menu.R:slider  ("Mana"      , "Min Mana %"             , 0, 0, 100, 1)    
     --
     Draven.Menu:menu   ("Draw", "Draw Settings") 
     Draven.Menu.Draw:boolean ("ON"     , "Drawings ON"            , true) 
@@ -154,7 +153,7 @@ function Draven.LoadMenu()
     Draven.Menu.Draw:boolean ("R"     , "Draw R"            , true)
     Draven.Menu.Draw:boolean ("TS"     , "Draw TS"            , true)
     Draven.Menu.Draw:boolean ("Dmg"     , "Draw Dmg"            , true)
-
+    Draven.Menu:header    ("_VERSION"  , "Release_"..Draven.scriptVersion)
     --
     for i=0, objManager.enemies_n -1 do
         local unit = objManager.enemies[i]
